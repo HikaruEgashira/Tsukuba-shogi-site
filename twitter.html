@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&amp;subset=japanese" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Twitterー筑波大学将棋部</title>
+  <link rel="stylesheet" type="text/css" href="src/main.css">
+</head>
+
+<body>
+  <div>
+    <div id="app">
+      <v-app>
+        <v-parallax dark src="./img/photo2.png">
+          <v-layout align-center column justify-center>
+            <div class="welcome">Tsukuba<br>Shogi Club</div>
+            <v-btn fab dark outline v-show="$vuetify.breakpoint.xsOnly" @click="$vuetify.goTo('#start', 'easing')">
+              <v-icon large>keyboard_arrow_down</v-icon>
+            </v-btn>
+          </v-layout>
+        </v-parallax>
+        <v-container fluid id="start">
+          <br>
+          <h1 class="col">Twitter</h1>
+          <v-card mb-2>
+            <v-container fluid grid-list-lg>
+              <v-layout row wrap>
+                <v-flex xs12>
+                  <div>
+                    <v-card class="ma-4">
+                      <p><a class="twitter-timeline" data-chrome=”noheader” data-chrome=”noscrollbar” data-tweet-limit="8" data-lang="ja"
+                          data-theme="light" data-link-color="#19CF86" href="https://twitter.com/tsukubashogi?ref_src=twsrc%5Etfw">Tweets by tsukubashogi</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                      </p>
+                    </v-card>
+                  </div>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-card>
+          <h1 class="col">Access</h1>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.371083147329!2d140.10137431526027!3d36.108816214010204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60220c06df6493b3%3A0xd26ed93a3085157!2z44CSMzA1LTAwMDYg6Iyo5Z-O55yM44Gk44GP44Gw5biC5aSp546L5Y-w77yR5LiB55uuIOaWh-WMluezu-OCteODvOOCr-ODq-S8mumkqA!5e0!3m2!1sja!2sjp!4v1536464872050"
+            height="300" width="100%" frameborder="0" class=""></iframe>
+
+          <h1 class="col">Information</h1>
+          <v-card class="pa-2">
+            <h3 class="headline mb-0 pt-2">Latest Update</h3>
+            <p class="information">2019年 01月20日　ページリニューアル</p class="information">
+            <p class="information">現管理者は情報科学類１年、江頭です。</p class="information">
+          </v-card>
+          <h1 class="col">Questions</h1>
+          <v-card class="pa-2">
+            <p class="information pt-2">当ホームページに対してお気づきの点（要望や意見を含め）などがある方は、下記メールアドレスへご連絡下さい。(-at-を@に変換してください。)</p>
+            <p class="questionForm">tsukubashogi -at- gmail.com</p>
+          </v-card>
+        </v-container>
+      </v-app>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+        return {
+        }
+      },
+      mounted() {
+        this.img = `./img/photo${Math.floor(Math.random() * 2)}.png`
+      },
+    })
+  </script>
+  <style>
+  </style>
+</body>
+
+</html>

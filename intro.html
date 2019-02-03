@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&amp;subset=japanese" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="src/index.css" />
+    <link rel="stylesheet" type="text/css" href="src/main.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="src/introduction.css" />
+    <script src="js/main.js"></script>
+    <title>部員紹介ー筑波大学将棋部</title>
+    <link rel="stylesheet" type="text/css" href="src/main.css" />
+  </head>
+
+  <body>
+    <div>
+      <div id="app">
+        <v-app>
+          <v-parallax dark src="./img/photo2.png">
+            <v-layout align-center column justify-center>
+              <div class="welcome">Tsukuba<br />Shogi Club</div>
+              <v-btn fab dark outline v-show="$vuetify.breakpoint.xsOnly" @click="$vuetify.goTo('#start', 'easing')">
+                <v-icon large>keyboard_arrow_down</v-icon>
+              </v-btn>
+            </v-layout>
+          </v-parallax>
+          <v-container fluid id="start">
+            <v-layout row wrap>
+              <v-flex xs12>
+                <div class="mainSection">
+                  <v-card class="py-2 mb-5" elevation="12">
+                  <h2 onclick="dispElement(0);">概要</h2>
+                  <div class="visible">
+                    <p class="introduction">
+                      2015年4月現在、部員数は20名程度。<br />
+                      昼下がり以降に部室に行けば、大抵誰かがいます。<br />
+                      フレックスタイム制なので、いつ来ても良いですし、同様にいつ帰っても構いません。<br />
+                      <a HREF="map.html">文化系サークル会館一階</a
+                      >に、自慢の漫画を何千冊も置いて活動しております。（棋書も200冊以上保有しています）<br />
+                      また、囲碁部と同じ部室に同居して活動しており、囲碁・将棋部で一つの部のような感じです。<br />
+                      2014年度秋季団体戦では<span class="emphasize">優勝</span
+                      >し、2015年度秋季団体戦は<span class="emphasize"
+                        >BI級</span
+                      >で戦います。
+                    </p>
+                  </div>
+                  </v-card>
+                  <v-card class="py-2 mb-5" elevation="12">
+                  <h2 onclick="dispElement(1);">年間の活動</h2>
+                  <div class="schedule visible">
+                    <ul>
+                      <li>4月中旬…新入生歓迎祭（新歓祭）</li>
+                      <li>4月下旬…関東大学将棋連盟主催・春季個人戦</li>
+                      <li>5月上～中旬…関東大学将棋連盟主催・春季団体戦</li>
+                      <li>6月上旬…関東大学将棋連盟主催・新人戦</li>
+                      <li>夏休み…夏合宿</li>
+                      <li>10月上旬…関東大学将棋連盟主催・秋季個人戦</li>
+                      <li>10月～11月頃…関東大学将棋連盟主催・秋季団体戦</li>
+                      <li>2月頃…追い出しコンパ</li>
+                      <li>
+                        3月頃…春合宿（2010年度の場合、筑波大学館山研修所で2泊3日）
+                      </li>
+                    </ul>
+                    <p>
+                      このほか町の将棋大会（ほとんど茨城県内）へ任意で年数回程度参加することがあります。
+                    </p>
+                  </div>
+                  </v-card>
+                  <v-card class="py-2 mb-5" elevation="12">
+                  <h2 onclick="dispElement(2);">日常の活動内容</h2>
+                  <div class="schedule visible">
+                    <ul>
+                      <li>部内リーグ戦を開催しています。</li>
+                      <li>
+                        基本的に好きな時に来て、そこにいる人と将棋を指す。
+                      </li>
+                      <li>将棋以外のことで他の部員とまったりする。</li>
+                      <li>
+                        （週１～２回の人もいるし、ほぼ毎日来る人もいるし、月に２，３回くらいの人もいます）
+                      </li>
+                      <li>（忙しくてあまり来れなくても大丈夫です）</li>
+                      <li>（○雀している光景を見たこともあります）</li>
+                      <li>（マンガを読んでいる人もいるし、雑談していたり…）</li>
+                    </ul>
+                  </div>
+                  </v-card>
+                  <v-card class="py-2 mb-5" elevation="12">
+                  <h2 onclick="dispElement(3);">特殊な活動</h2>
+                  <div class="schedule visible">
+                    <ul>
+                      <li>
+                        団体戦が春と秋にあります。その他個人戦に出ることも出来ます。
+                      </li>
+                      <li>（忙しくてあまり参加できない人もいます）</li>
+                      <li>
+                        （逆に強くなくても、忙しくなかったら参加することが出来ちゃったりします）
+                      </li>
+                      <li>
+                        （対局結果に対し責任を追求されたりすることは（基本的には）無いのでご安心下さい）
+                      </li>
+                    </ul>
+                  </div>
+                  </v-card>
+                  <v-card class="py-2 mb-5" elevation="12">
+                  <h2 onclick="dispElement(4);">
+                    入部希望orちょっと興味のある人or受験生の方へ
+                  </h2>
+                  <div class="visible">
+                    <p class="introduction">
+                      将棋部は先輩が非常に優しく丁寧に指導しますので、<br />
+                      <span class="emphasize">「全然分からない」</span
+                      >とか、<span class="emphasize">「少しなら…」</span
+                      >という方でも、楽しく活動できます。<br />
+                      一年中いつでも、部員募集しているのでちょっとでも興味を抱いた方は是非一度、部室まで足をお運びください。貴方の目には宇宙が映ることでしょう。
+                    </p>
+                  </div>
+                  </v-card>
+                </div>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-app>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: '#app',
+        data() {
+          return {
+            menbers: [
+              {isMenber: false, grade: 'M2'},
+              {
+                isMenber: true,
+                menber: '清水',
+                description:
+                  '学校の仕事で多忙な紀州人。Twitter5割、全代会5割でできている。将棋は……彼の厚い攻めと謎のボケを受け止めるのは至難の業。'
+              },
+              {
+                isMenber: true,
+                menber: '中山',
+                description:
+                  '室にいる頻度は負けない元部長。単位大丈夫か？ 携帯電話の置き忘れ回数は誰にも負けない。 使用戦法への一途な思いもだれにも負けない。 孤独にも負けない！'
+              },
+              {isMenber: false, grade: 'M1'},
+              {
+                isMenber: true,
+                menber: '小野',
+                description:
+                  '輩だろうと何だろうと隙あらば煽ってくる危険人物。しかし盤上ではわりとおとなしい？'
+              },
+              {
+                isMenber: true,
+                menber: '久保田',
+                description:
+                  '今日の服装は躍動感にあふれているんですよ。色彩検定2級、けど飽きたらしい。 常に元気そうに見えるは服装の色のせいなのか？ 使う戦法はきｍきｍイことで定評を得ている。'
+              },
+              {isMenber: false, grade: 'B4'},
+              {
+                isMenber: true,
+                menber: '上迫',
+                description:
+                  '上様、神様、と呼ばれ、部内で崇め奉られている。 途中入部したさわやか系イケメン。 国際総合学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '小原',
+                description:
+                  '将棋部前部長。 人がいいのか面倒ごとを気づいたら引き受けているような．．． 競馬の授業をとるほどの競馬好き 地球学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '柏木',
+                description:
+                  'あだ名は「ゆきりん」。特にAKB に興味があるわけではない。 居飛車本格派（？）。困ったら大駒きってから考えます。 情報科学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '酒井',
+                description:
+                  'とにかく明るい将棋部のムードメーカー。 ポカが多いのか、部室にいると彼の「やらかした～」をよく聞く気がする。（筆者調べ） 応用理工学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '菅',
+                description:
+                  'レアキャラ。だいたい金曜日しか来ない。 会うと次の日いいことがあるかも。 応用理工学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '高嶋',
+                description:
+                  'はるばる北の国からやってきた煽りの伝道師。 茨城は暑いのか、毎日2リットルペットボトルの水を飲んでいる。 名言は「飛車は角の二倍強いんですよ」「ゼンツ」。知識情報・図書館学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '田中',
+                description:
+                  '常にほんわかした雰囲気で、ある意味将棋部の癒し。 と思っていたのだが、プロレス好きということが発覚。 数学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '松本',
+                description:
+                  '研究室に軟禁されており、なかなか部室にはいらっしゃらない激レア。 化学類所属。'
+              },
+              {isMenber: false, grade: 'B3'},
+              {
+                isMenber: true,
+                menber: '川越',
+                description:
+                  '将棋部のマスコットor姫 がおそらく部内でお酒が一番強い...? 工学システム学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '小山',
+                description:
+                  '将棋部現部長 棋力、体力、雀力、煽り力をすべて兼ね備えて入部してきた将棋部の申し子 もはや佇まいは院生のごとし ２切れの鬼  社会学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '杉山',
+                description:
+                  '将棋部新歓担当 戦法の研究に余念がない。ほめると調子に乗るが、ほめられなくても調子に乗る。 会うと必ずおごってくれる。 物理学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '平松',
+                description:
+                  '囲碁と麻雀からの刺客 一番先輩を立ててくれる常識人 応用理工学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '武者野',
+                description:
+                  '将棋も勉学も頑張っている真面目人 性格はおっとりしていて天然系 ただ真顔で煽っている姿が時たま観測されている 応用理工学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '森',
+                description:
+                  '筑波大将棋部第n代目の森氏 知的な雰囲気漂うインテリくん どうぶつしょうぎの猛者。現役では最強(?)。 応用理工学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '吉岡',
+                description:
+                  '秋学期になって出現率がアップした山陰の民 いつもにこにこしているが闇が深い 馬に造詣が深かったりするかもしれない。 物理学類所属。'
+              },
+              {isMenber: false, grade: 'B2'},
+              {
+                isMenber: true,
+                menber: '梅田',
+                description:
+                  '好きな食べ物は牛丼。嫌いな食べ物はナス。 ゴキ中バスター。超急戦は全国トップクラス。 おそらく現役最強。 社会工学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '遠藤',
+                description:
+                  '通称えんちゃん。 落単芸人。ホームレス大学生。 合宿担当。 地球学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '大森',
+                description:
+                  '将棋部副部長 ココリコス。 部屋の電球なしで半年間過ごした男。 ねっしーからの刺客。 地球学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '櫛田',
+                description:
+                  'めちゃめちゃ部室にいる。 数学の力と引き換えに敬語を失った男。 数学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '桑原',
+                description:
+                  '将棋部部局員 部内GPA最弱の男。 ゴリラのような将棋を指す。 化学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '西',
+                description:
+                  '哲学ニート（部員談）。話しかけると哲学ばなしが…。 今年ドイツに留学するらしい。 本サイトの管理人。 人文学類所属。'
+              },
+              {
+                isMenber: true,
+                menber: '三戸部',
+                description:
+                  '西木野真姫と渡辺曜推しのラブライバー。 ラブライブの話をすれば仲良くなれるかもしれない。 戦型チェック担当。 情報科学類所属。'
+              }
+            ]
+          }
+        },
+        mounted() {
+          this.img = `./img/photo${Math.floor(Math.random() * 2)}.png`
+        }
+      })
+    </script>
+    <style></style>
+  </body>
+</html>

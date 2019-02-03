@@ -1,0 +1,161 @@
+html {
+  /* background-image: url("../img/a.png"); */
+  background-color: aliceblue;
+  background-size: cover;
+  -moz-background-size: cover;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+}
+/* 見出し属性 START*/
+h1.col {
+  color: white;
+  background-color: teal;
+  text-align: left;
+  padding: 0% 1%;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #ff7500;
+  background-color: #8fedff;
+  text-align: left;
+  padding-left: 5%;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 120%;
+  text-align: left;
+  padding-left: 10%;
+  margin-bottom: 0;
+}
+
+.questionForm{
+  margin-left:10%;
+  color: gray;
+  font-size:30px;
+}
+/* 見出し属性 END*/
+
+/* div要素 START*/
+div {
+  text-align: left;
+  border-radius: 4px;
+}
+@media screen and (max-width: 900px) {
+  div.mainSection {
+    width: 80%;
+  }
+}
+
+div.attention {
+  text-align: left;
+  font-size: 12px;
+  padding-left: 1%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+div.hidden {
+  width: 100%;
+  display: none;
+}
+div.visible {
+  display: inline-block;
+  animation-name: visible;
+  animation-duration: 2s;
+}
+
+/* div要素 END*/
+/* table要素 START */
+table {
+  background-color: aliceblue;
+  margin: 10px auto 10px;
+  text-align: left;
+  border: 1px;
+  border-style: solid;
+}
+/* table要素 END */
+/* text START*/
+.emphasize {
+  font-size: 40px;
+  color: red;
+}
+.information {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 12%;
+  color: black;
+}
+
+.questionForm{
+  margin-left:10%;
+  color: black;
+  font-size:30px;
+}
+
+.welcome {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.4em;
+  font-size: 40px;
+  text-indent: 0.3em;
+  color: black;
+  text-shadow: 2px 2px 0 aliceblue, -2px 2px 0 aliceblue, 2px -2px 0 aliceblue,
+    -2px -2px 0 aliceblue;
+  text-shadow: 2px 2px 1px aliceblue, -2px 2px 1px aliceblue,
+    2px -2px 1px aliceblue, -2px -2px 1px aliceblue;
+}
+.darkshadow {
+  text-shadow: 1px 1px 0 gray, -1px 1px 0 gray, 1px -1px 0 gray,
+    -1px -1px 0 gray;
+}
+.subtitle {
+  display: inline-block;
+  position: absolute;
+  top: 260px;
+  left: 0;
+  bottom: 20%;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  letter-spacing: 0.4em;
+  font-size: 15px;
+  text-shadow: 0 1px 0 rgba(black, 0.1);
+  text-indent: 0.3em;
+}
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+/* 波打つ球体 END */
+
+@keyframes visible {
+  0% {
+    transform: scaleY(0);
+    scroll-behavior: smooth;
+  }
+  100% {
+    transform: scaleY(1);
+    scroll-behavior: smooth;
+  }
+}
+
+/* 地図 */
+@media (min-width: 1000px) {
+  .map {
+    width: 500px;
+  }
+}
