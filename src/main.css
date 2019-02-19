@@ -1,24 +1,9 @@
-html {
-  /* background-image: url("../img/a.png"); */
-  background-color: aliceblue;
-  background-size: cover;
-  -moz-background-size: cover;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-}
 /* 見出し属性 START*/
 h1.col {
   color: white;
   background-color: teal;
   text-align: left;
-  padding: 0% 1%;
-  margin-bottom: 0;
+  padding: 0% 5% 0%;
 }
 
 h2 {
@@ -105,12 +90,9 @@ table {
   font-family: "Playfair Display", serif;
   letter-spacing: 0.4em;
   font-size: 40px;
-  text-indent: 0.3em;
   color: black;
-  text-shadow: 2px 2px 0 aliceblue, -2px 2px 0 aliceblue, 2px -2px 0 aliceblue,
-    -2px -2px 0 aliceblue;
-  text-shadow: 2px 2px 1px aliceblue, -2px 2px 1px aliceblue,
-    2px -2px 1px aliceblue, -2px -2px 1px aliceblue;
+  text-shadow: 1px 1px 0 aliceblue, -1px 1px 0 aliceblue, 1px -1px 0 aliceblue,
+    -1px -1px 0 aliceblue;
 }
 .darkshadow {
   text-shadow: 1px 1px 0 gray, -1px 1px 0 gray, 1px -1px 0 gray,
