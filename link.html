@@ -28,7 +28,7 @@
         </v-layout>
       </v-parallax>
       <v-container fluid id="start">
-        <h1 class="col pt-2">Introduction of Members</h1>
+        <h1 class="col pt-2">Link</h1>
         <v-card>
           <v-container fluid grid-list-lg>
             <v-layout row wrap>
@@ -36,8 +36,8 @@
                 <v-card class="mb-5">
                   <v-card-title primary-title>
                     <div>
-                      <div class="headline">部員紹介</div>
-                      <span class="gray--text">※学年・五十音順、敬称略（2019年度)</span>
+                      <div class="headline">大学将棋のリンク</div>
+                      <span class="gray--text">（※2019年度春季団体戦時点での順位)</span>
                     </div>
                   </v-card-title>
                 </v-card>
@@ -75,40 +75,40 @@
       data() {
         return {
           menbers: [
-            {divide: true, contents: '関東Ａ級(2018年度春)'},
-            {divide: false, href: '', name: '早稲田大学将棋部', description: '学校の仕事で多忙な紀州人。Twitter5割、全代会5割でできている。将棋は……彼の厚い攻めと謎のボケを受け止めるのは至難の業。' },
-            {divide: false, href: '', name: '東京大学将棋部', description: '室にいる頻度は負けない元部長。単位大丈夫か？ 携帯電話の置き忘れ回数は誰にも負けない。 使用戦法への一途な思いもだれにも負けない。 孤独にも負けない！'},
-            {divide: false, href: '', name: '埼玉大学将棋部', description: '輩だろうと何だろうと隙あらば煽ってくる危険人物。しかし盤上ではわりとおとなしい？'},
-            {divide: false, href: '', name: '慶應義塾大学将棋研究会', description: '今日の服装は躍動感にあふれているんですよ。色彩検定2級、けど飽きたらしい。 常に元気そうに見えるは服装の色のせいなのか？ 使う戦法はきｍきｍイことで定評を得ている。'},
-            {divide: false, href: '', name: '一橋大学将棋部', description: '上様、神様、と呼ばれ、部内で崇め奉られている。 途中入部したさわやか系イケメン。 国際総合学類所属。'},
-            {divide: false, href: '', name: '神奈川大学将棋部', description: '将棋部前部長。 人がいいのか面倒ごとを気づいたら引き受けているような．．． 競馬の授業をとるほどの競馬好き 地球学類所属。'},
-            {divide: false, href: '', name: '日本大学理工将棋研究会', description: 'あだ名は「ゆきりん」。特にAKB に興味があるわけではない。 居飛車本格派（？）。困ったら大駒きってから考えます。 情報科学類所属。'},
-            {divide: false, href: '', name: '千葉大学将棋部', description: 'とにかく明るい将棋部のムードメーカー。 ポカが多いのか、部室にいると彼の「やらかした～」をよく聞く気がする。（筆者調べ） 応用理工学類所属。'},
-            {divide: true, contents: '関東Ｂ１級(2010年度春)'},
-            {divide: false, href: '', name: '東京理科大学将棋部', description: 'レアキャラ。だいたい金曜日しか来ない。 会うと次の日いいことがあるかも。 応用理工学類所属。'},
-            {divide: false, href: '', name: '東京工業大学将棋部', description: 'はるばる北の国からやってきた煽りの伝道師。 茨城は暑いのか、毎日2リットルペットボトルの水を飲んでいる。 名言は「飛車は角の二倍強いんですよ」「ゼンツ」。知識情報・図書館学類所属。'},
-            {divide: false, href: '', name: '明大将研ON LINE', description: '常にほんわかした雰囲気で、ある意味将棋部の癒し。 と思っていたのだが、プロレス好きということが発覚。 数学類所属。'},
-            {divide: false, href: '', name: '中央大学将棋部', description: '研究室に軟禁されており、なかなか部室にはいらっしゃらない激レア。 化学類所属。'},
-            {divide: false, href: '', name: '青山学院大学チェックメイト部', description: '将棋部のマスコットor姫 がおそらく部内でお酒が一番強い...? 工学システム学類所属。'},
-            {divide: false, href: '', name: '法政大学将棋部', description: '将棋部現部長 棋力、体力、雀力、煽り力をすべて兼ね備えて入部してきた将棋部の申し子 もはや佇まいは院生のごとし ２切れの鬼  社会学類所属。'},
-            {divide: false, href: '', name: '東洋大学将棋研究会ＨＰ', description: '将棋部新歓担当 戦法の研究に余念がない。ほめると調子に乗るが、ほめられなくても調子に乗る。 会うと必ずおごってくれる。 物理学類所属。'},
-            {divide: true, contents: '関東Ｂ２級(2010年度春)'},
-            {divide: false, href: '', name: '駒澤大学将棋愛好会ＨＰ', description: '囲碁と麻雀からの刺客 一番先輩を立ててくれる常識人 応用理工学類所属。'},
-            {divide: false, href: '', name: '東京理科大学野田同好会将棋部(理大理工）', description: '将棋も勉学も頑張っている真面目人 性格はおっとりしていて天然系 ただ真顔で煽っている姿が時たま観測されている 応用理工学類所属。'},
-            {divide: false, href: '', name: '千葉工業大学将棋倶楽部', description: '筑波大将棋部第n代目の森氏 知的な雰囲気漂うインテリくん どうぶつしょうぎの猛者。現役では最強(?)。 応用理工学類所属。'},
-            {divide: false, href: '', name: '上智大学将棋部', description: '秋学期になって出現率がアップした山陰の民 いつもにこにこしているが闇が深い 馬に造詣が深かったりするかもしれない。 物理学類所属。'},
-            {divide: true, contents: '関東Ｃ級(2010年度春)'},
-            {divide: false, href: '', name: '首都大学東京将棋部', description: '好きな食べ物は牛丼。嫌いな食べ物はナス。 ゴキ中バスター。超急戦は全国トップクラス。 おそらく現役最強。 社会工学類所属。'},
-            {divide: false, href: '', name: '東海大学望星会囲碁将棋部', description: '通称えんちゃん。 落単芸人。ホームレス大学生。 合宿担当。 地球学類所属。'},
+            {divide: true, contents: '関東Ａ級(2019年度春)'},
+            {divide: false, href: '', name: '早稲田大学将棋部', description: '大会結果が非常に丁寧です。' },
+            {divide: false, href: '', name: '東京大学将棋部', description: '情報盛りだくさんです。'},
+            {divide: false, href: '', name: '慶應義塾大学将棋研究会', description: '大会結果をxlsでダウンロード出来るようになってます。'},
+            {divide: false, href: '', name: '日本大学理工将棋研究会', description: '内容が充実しています。'},
+            {divide: false, href: '', name: '東京工業大学将棋部', description: '非常に簡潔なページです'},
+            {divide: false, href: '', name: '千葉大学将棋部', description: '丁寧なHPです。'},
+            {divide: false, href: '', name: '東洋大学将棋研究会ＨＰ', description: 'コンテンツは少々少なめですが、充実しています。'},
+            {divide: true, contents: '関東Ｂ１級(2019年度春)'},
+            {divide: false, href: '', name: '明大将研ON LINE', description: 'カラフルで丁寧です。'},
+            {divide: false, href: '', name: '東京理科大学将棋部', description: '中身の濃いページです。　ちなみに、理大理工とは別の組織です。'},
+            {divide: false, href: '', name: '一橋大学将棋部', description: '少ないコンテンツながら非常に内容が充実しています。'},
+            {divide: false, href: '', name: '法政大学将棋部', description: 'スタイリッシュで格好良いページです。'},
+            {divide: false, href: '', name: '青山学院大学チェックメイト部', description: '丁寧に作られています。　アットホームな雰囲気で楽しいです。'},
+            {divide: false, href: '', name: '首都大学東京将棋部', description: 'さっぱりしていて見やすいです。'},
+            {divide: true, contents: '関東Ｂ２級(2019年度春)'},
+            {divide: false, href: '', name: '中央大学将棋部', description: '格好良いHPです。　特に、部員の紹介が凄いです'},
+            {divide: false, href: '', name: '埼玉大学将棋部', description: 'さっぱりしていて見やすいHPです。'},
+            {divide: false, href: '', name: '神奈川大学将棋部', description: '少ないコンテンツながら非常に内容が充実しています。'},
+            {divide: true, contents: '関東Ｃ1級(2019年度春)'},
+            {divide: false, href: '', name: '東海大学望星会囲碁将棋部', description: '結果がとても見やすく作られてます。'},
+            {divide: false, href: '', name: '東京理科大学野田同好会将棋部(理大理工）', description: 'コンテンツが非常に充実しています。　特に、棋譜の解説が丁寧です。'},
+            {divide: true, contents: '関東Ｃ2級(2019年度春)'},
+            {divide: false, href: '', name: '駒澤大学将棋愛好会ＨＰ', description: 'ブログ形式で、面白い記事が沢山あります。'},
+            {divide: false, href: '', name: '千葉工業大学将棋倶楽部', description: 'まだ内容は少ないですが…。'},
+            {divide: false, href: '', name: '上智大学将棋部', description: '非常に華やかなページで、色々な仕掛けがしてあります。（相互）'},
             {divide: true, contents: 'その他の将棋部' },
-            {divide: false, href: '', name: '東北大学将棋部', description: '将棋部部長 ココリコス。 部屋の電球なしで半年間過ごした男。 ねっしーからの刺客。 地球学類所属。'},
+            {divide: false, href: '', name: '東北大学将棋部', description: '合宿などを一緒にやらせて頂いている東北大学の将棋部のＨＰです。（相互）'},
             {divide: true, contents: '将棋NEWS関連' },
-            {divide: false, href: '', name: '日本将棋連盟', description: 'めちゃめちゃ部室にいる。 数学の力と引き換えに敬語を失った男。 数学類所属。'},
-            {divide: false, href: '', name: 'MYCOM将棋WEB', description: '将棋部部局員 部内GPA最弱の男。 ゴリラのような将棋を指す。 化学類所属。'},
-            {divide: false, href: '', name: 'Asahi.com将棋Page西', description: '哲学ニート（部員談）。話しかけると哲学ばなしが…。 今年ドイツに留学するらしい。 本サイトの管理人。 人文学類所属。'},
-            {divide: false, href: '', name: '関東大学将棋連盟', description: '西木野真姫と渡辺曜推しのラブライバー。 ラブライブの話をすれば仲良くなれるかもしれない。 戦型チェック担当。 情報科学類所属。'},
-            {divide: false, href: '', name: '茨城県棋界情報', description: '西木野真姫と渡辺曜推しのラブライバー。 ラブライブの話をすれば仲良くなれるかもしれない。 戦型チェック担当。 情報科学類所属。'},
-            {divide: true, contents: 'B4'}
+            {divide: false, href: '', name: '日本将棋連盟', description: 'ここで紹介の必要もなさそうですが一応。'},
+            {divide: false, href: '', name: 'MYCOM将棋WEB', description: '内容・量ともによろしいかと。'},
+            {divide: false, href: '', name: 'Asahi.com将棋Page', description: '朝日オープンの棋譜を並べられたりする。展望が楽しいです。'},
+            {divide: false, href: '', name: '関東大学将棋連盟', description: '関東地方の大学将棋の大会はここでCheck!（更新を望んではいけない）（相互）'},
+            {divide: false, href: '', name: '茨城県棋界情報', description: '茨城県棋界の情報を扱っています。'},
           ]
         }
       },
