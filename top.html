@@ -22,23 +22,21 @@
     <div id="app">
       <v-app>
         <v-content app>
-          <v-parallax dark src="./img/a.png" style="height: 100vh">
-            <header align="right" style="height: 64px">
-              item1 item2 item3
-            </header>
-            <v-layout align-center column justify-center>
-              <div class="welcome" style="position: absolute; top: 64px; right: 64px">Tsukuba<br />Shogi Club</div>
+          <v-parallax dark src="./img/a.png" style="height: 90vh">
+            <v-layout>
+              <div class="welcome">Tsukuba<br />Shogi Club</div>
               <v-btn
                 fab
                 dark
                 outline
-                v-show="$vuetify.breakpoint.xsOnly"
+                v-if="$vuetify.breakpoint.xsOnly"
                 @click="$vuetify.goTo('#start', 'easing')"
+                style="position: absolute; bottom: 5%; right: 5%;"
               >
               <v-icon large>keyboard_arrow_down</v-icon>
               </v-btn>
-              <ul align="right" class="pa-2" style="position: absolute; bottom: 64px; left: 64px; background-color: yellowgreen; height: 40%; width: 30%; border-color: black; border-radius: 10%">
-                <li v-for="item in items"><a :href=item.link>{{ item.title }}</a></li>
+              <ul class="pa-3 font-weight-bold" style="position: absolute; bottom: 10%; left: 15%; background-color: rgba(255, 255, 255, 0.3); min-width: 30%; border-color: black; border-radius: 8px; border: thick double #32a1ce; outline: 0.5rem solid teal; outline-offset: 0.5rem; clear:both;">
+                <li v-for="item in items" style="height: 10%"><a :href=item.link style="color: black">{{ item.title }}</a></li>
               </ul>
             </v-layout>
           </v-parallax>
@@ -90,14 +88,14 @@
                 <h1 class="col">Information</h1>
                 <v-card class="pa-2 my-3">
                   <h3 class="headline mb-0 pt-2">Latest Update</h3>
-                  <p class="information">2019年 xx月xx日　ページリニューアル</p>
-                  <p class="information">
+                  <p>2019年 xx月xx日　ページリニューアル</p>
+                  <p>
                     現管理者は情報科学類１年、江頭です。
                   </p>
                 </v-card>
                 <h1 class="col">Questions</h1>
                 <v-card class="pa-2 my-3">
-                  <p class="information pt-2">
+                  <p class="pt-2">
                     当ホームページに対してお気づきの点（要望や意見を含め）などがある方は、下記メールアドレスへご連絡下さい。(-at-を@に変換してください。)
                   </p>
                   <p class="questionForm">tsukubashogi -at- gmail.com</p>
@@ -185,16 +183,17 @@
       });
       </script>
     <style>
-      h1 {
-        border-radius: 10px;
-      }
       body {
         font-family: "Noto Serif JP", serif;
       }
       li {
         list-style: none;
-        font-size: 1.2;
+        font-size: 1.1em;
         align-items: center;
+        border-radius: 10px;
+      }
+      li:hover {
+        background-color: teal;
       }
     </style>
   </body>

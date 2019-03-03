@@ -4,12 +4,13 @@ h1.col {
   background-color: teal;
   text-align: left;
   padding: 0% 5% 0%;
+  border-radius: 10px;
 }
 
 h2 {
   color: #ff7500;
-  background-color: #8fedff;
   text-align: left;
+  border-bottom: solid orange;
   padding-left: 5%;
   margin-top: 0;
 }
@@ -32,11 +33,6 @@ h3 {
 div {
   text-align: left;
   border-radius: 4px;
-}
-@media screen and (max-width: 900px) {
-  div.mainSection {
-    width: 80%;
-  }
 }
 
 div.attention {
@@ -73,11 +69,12 @@ table {
   font-size: 40px;
   color: red;
 }
-.information {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 12%;
-  color: black;
+
+.outline {
+  outline: 0.2rem solid teal;
+  border-radius: 10%;
+  outline-style: outset;
+  width: 100%;
 }
 
 .questionForm{
@@ -93,6 +90,16 @@ table {
   color: black;
   text-shadow: 1px 1px 0 aliceblue, -1px 1px 0 aliceblue, 1px -1px 0 aliceblue,
     -1px -1px 0 aliceblue;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;  /*webkit系*/
+  -moz-box-sizing: border-box;  /*Firefox*/
+  box-sizing: border-box;
+  text-align: right;
 }
 .darkshadow {
   text-shadow: 1px 1px 0 gray, -1px 1px 0 gray, 1px -1px 0 gray,
