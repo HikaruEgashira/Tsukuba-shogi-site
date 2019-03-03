@@ -50,7 +50,7 @@
                     </v-card-title>
                   </v-card>
                   <v-card ripple hover v-else>
-                    <v-card-title primary-title>
+                    <v-card-title primary-title @click=link(nthMenber.link)>
                       <div>
                         <div class="headline" v-cloak>{{ nthMenber.name }}</div>
                         <span v-cloak>{{ nthMenber.description }}</span>
@@ -76,7 +76,7 @@
         return {
           menbers: [
             {divide: true, contents: '関東Ａ級(2019年度春)'},
-            {divide: false, href: '', name: '早稲田大学将棋部', description: '大会結果が非常に丁寧です。' },
+            {divide: false, href: '', name: '早稲田大学将棋部', description: '大会結果が非常に丁寧です。', link: 'http://wasedashogi.web.fc2.com/'},
             {divide: false, href: '', name: '東京大学将棋部', description: '情報盛りだくさんです。'},
             {divide: false, href: '', name: '慶應義塾大学将棋研究会', description: '大会結果をxlsでダウンロード出来るようになってます。'},
             {divide: false, href: '', name: '日本大学理工将棋研究会', description: '内容が充実しています。'},
@@ -115,6 +115,11 @@
       mounted() {
         this.img = `./img/photo${Math.floor(Math.random() * 2)}.png`
       },
+      methods: {
+        link (link) {
+          location.href = link
+        }
+      }
     })
   </script>
 </body>
