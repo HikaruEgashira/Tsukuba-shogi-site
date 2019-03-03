@@ -1,36 +1,224 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<script>
-    function redirectTop(){
-        document.getElementById("entrance").click();
-    };
-</script>
-<HTML>
-<HEAD>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <TITLE>筑波大学将棋部</TITLE>
-    <link rel="stylesheet" type="text/css" href="src/main.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="src/index.css">
-</HEAD>
-<BODY class="top">
-    <div class='box' onclick="redirectTop();">
-            <div class="wave -one"></div>
-            <div class="wave -two"></div>
-            <div class="wave -three"></div>
-            <div class="title">University<br>of<br>Tsukuba<br>Shogi Club</div>
-            <a id="entrance" class="subtitle" href="top.html">Touch Me</a>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <link href="src/main.css" type="text/css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.5"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="#008080" name="theme-color" />
+    <meta name="Description" content="当ホームページは筑波大学将棋部の公式ページです。当ホームページの記載内容については万全を期しておりますが、その内容については一切の保証をしないものと致します。当ホームページに使用されている画像は無断転載、複製（コピー）、二次加工、配布、販売を禁止しています。以上のことを了解された方は下の入口からお入りください。">
+    <title>筑波大学将棋部</title>
+  </head>
+  <body>
+    <div id="app">
+      <v-app>
+        <v-content app>
+          <v-parallax dark src="./img/a.jpg" style="height: 90vh">
+            <v-layout>
+              <div class="welcome">Tsukuba<br />Shogi Club</div>
+              <!-- <v-btn
+                fab
+                dark
+                outline
+                v-if="$vuetify.breakpoint.xsOnly"
+                @click="$vuetify.goTo('#start', 'easing')"
+                style="position: absolute; bottom: 5%; right: 5%;"
+              >
+              <v-icon large>keyboard_arrow_down</v-icon>
+              </v-btn> -->
+              <ul class="pa-3 font-weight-bold top">
+                <li v-for="item in items" style="height: 10%" class="h">
+                  <a :href="item.link" style="color: black">{{ item.title }}</a>
+                </li>
+              </ul>
+            </v-layout>
+          </v-parallax>
+          <v-container fluid id="start">
+            <v-layout row wrap>
+              <v-flex xs10 offset-xs1>
+                <h1 class="col">Menu</h1>
+                <div v-for="(item,i) in items">
+                  <v-card class="mt-4">
+                    <v-img class="white--text" max-height="200px" :src="item.src">
+                      <v-container fill-height fluid>
+                        <v-layout fill-height>
+                          <v-flex xs12>
+                            <span
+                              class="headline darkshadow"
+                              style="font-weight:bold"
+                              >{{ item.title }}</span
+                            >
+                          </v-flex>
+                        </v-layout>
+                      </v-container>
+                    </v-img>
+                    <v-card-text>
+                      <span>{{ item.description }}</span>
+                    </v-card-text>
+                    <v-btn flat color="teal lighten-3" :href="item.link"
+                      >read more</v-btn
+                    >
+                  </v-card>
+                </div>
+                <div class="pa-2">
+                  <v-carousel hide-delimiters hide-controls>
+                    <v-carousel-item
+                      v-for="(item,i) in items"
+                      :key="i"
+                      :src="item.src"
+                    ></v-carousel-item>
+                  </v-carousel>
+                </div>
+                <h1 class="col">Access</h1>
+                <v-card class="mt-2 mb-4">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3223.371083147329!2d140.10137431526027!3d36.108816214010204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60220c06df6493b3%3A0xd26ed93a3085157!2z44CSMzA1LTAwMDYg6Iyo5Z-O55yM44Gk44GP44Gw5biC5aSp546L5Y-w77yR5LiB55uuIOaWh-WMluezu-OCteODvOOCr-ODq-S8mumkqA!5e0!3m2!1sja!2sjp!4v1536464872050"
+                    height="300"
+                    width="100%"
+                    frameborder="0"
+                    class="map"
+                    title="map"
+                  ></iframe>
+                </v-card>
+                <h1 class="col">Information</h1>
+                <v-card class="mt-2 mb-4">
+                  <v-card-text>
+                    <h3 class="headline font-weight-bold pb-2">
+                      Latest Update
+                    </h3>
+                    <p>2019年 xx月xx日　ページリニューアル</p>
+                    <p>
+                      現管理者は情報科学類１年、江頭です。
+                    </p>
+                  </v-card-text>
+                </v-card>
+                <h1 class="col">Questions</h1>
+                <v-card class="mt-2 mb-4">
+                  <v-card-text>
+                    <p class="pt-2">
+                      当ホームページに対してお気づきの点（要望や意見を含め）などがある方は、下記メールアドレスへご連絡下さい。(-at-を@に変換してください。)
+                    </p>
+                    <p class="headline font-weight-bold font-italic">
+                      tsukubashogi -at- gmail.com
+                    </p>
+                  </v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-container>
+        </v-content>
+      </v-app>
     </div>
-    <div class="mainSection">
-        <h2>Attention</h2>
-        <div class="attention">
-            <ul>
-                    <li>当ホームページは筑波大学将棋部の公式ページです。</li>
-                    <li>当ホームページの記載内容については万全を期しておりますが、その内容については一切の保証をしないものと致します。</li>
-                    <li>当ホームページに使用されている画像は無断転載、複製（コピー）、二次加工、配布、販売を禁止しています</li>
-                    <li>以上のことを了解された方は上の球体からお入りください。</li>
-            </ul>
-        </div>
-    </div>
-    </div>
-</BODY>
 
-</HTML>
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.polyfill.io/v2/polyfill.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            nav: false,
+            items: [
+              {
+                title: "将棋部の紹介",
+                description:
+                  "将棋部の紹介です。入部希望の方、受験生の方はどうぞ。",
+                link: "intro.html",
+                src: "./img/1.jpg",
+                lsrc: "./img/lazy/1.webp"
+              },
+              {
+                title: "新歓の案内",
+                description:
+                  "本年度の新歓のご案内。「将棋部の紹介」と合わせてご覧下さい。",
+                link: "shinkan.html",
+                src: "./img/2.jpg",
+                lsrc: "./img/lazy/2.webp"
+              },
+              {
+                title: "実績",
+                description:
+                  "将棋部の実績が見られます。部員の皆様もご覧下さい。",
+                link: "kekka/2010.html",
+                src: "./img/3.jpg",
+                lsrc: "./img/lazy/3.webp"
+              },
+              {
+                title: "部員紹介",
+                description: "将棋部の部員紹介です。",
+                link: "shoukai.html",
+                src: "./img/4.jpg",
+                lsrc: "./img/lazy/4.webp"
+              },
+              {
+                title: "イベント",
+                description: "大会・その他イベントの詳細はこちら",
+                link: "event.html",
+                src: "./img/5.jpg",
+                lsrc: "./img/lazy/5.webp"
+              },
+              {
+                title: "掲示板",
+                description: "どなたでも、気軽に書き込んでください。",
+                link: "http://jbbs.livedoor.jp/game/45916/",
+                src: "./img/6.jpg",
+                lsrc: "./img/lazy/6.webp"
+              },
+              {
+                title: "リンク",
+                description: "他大学の将棋部などのリンク紹介です。",
+                link: "link.html",
+                src: "./img/7.jpg",
+                lsrc: "./img/lazy/7.webp"
+              },
+              {
+                title: "筑波大学将棋部Twitter",
+                description: "筑波大学将棋部の最新情報をお伝えします。",
+                link: "twitter.html",
+                src: "./img/8.jpg",
+                lsrc: "./img/lazy/8.webp"
+              },
+              {
+                title: "部内専用ページ",
+                description: "入室にはパスワードが必要です。",
+                link: "gate/gate.cgi",
+                src: ""
+              }
+            ]
+          };
+        },
+        mounted() {
+          this.img = `./img/photo${Math.floor(Math.random() * 2)}.jpg`;
+        }
+      });
+    </script>
+    <style>
+      ul.top {
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+        background-color: rgba(255, 255, 255, 0.3);
+        min-width: 30%;
+        border-color: black;
+        border-radius: 8px;
+        border: thick double #32a1ce;
+        outline: 0.5rem solid teal;
+        outline-offset: 0.5rem;
+      }
+    </style>
+  </body>
+</html>
