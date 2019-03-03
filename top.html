@@ -37,7 +37,7 @@
               >
               <v-icon large>keyboard_arrow_down</v-icon>
               </v-btn>
-              <ul style="position: absolute; bottom: 64px; left: 64px; background-color: yellowgreen; height: 40%; width: 30%; border-color: black; border-radius: 10%">
+              <ul align="right" class="pa-2" style="position: absolute; bottom: 64px; left: 64px; background-color: yellowgreen; height: 40%; width: 30%; border-color: black; border-radius: 10%">
                 <li v-for="item in items"><a :href=item.link>{{ item.title }}</a></li>
               </ul>
             </v-layout>
@@ -190,6 +190,11 @@
       }
       body {
         font-family: "Noto Serif JP", serif;
+      }
+      li {
+        list-style: none;
+        font-size: 1.2;
+        align-items: center;
       }
     </style>
   </body>
