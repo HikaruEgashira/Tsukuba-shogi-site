@@ -77,12 +77,6 @@ table {
   width: 100%;
 }
 
-.questionForm{
-  margin-left:10%;
-  color: black;
-  font-size:30px;
-}
-
 .welcome {
   font-family: "Playfair Display", serif;
   letter-spacing: 0.4em;
@@ -100,6 +94,7 @@ table {
   -moz-box-sizing: border-box;  /*Firefox*/
   box-sizing: border-box;
   text-align: right;
+  z-index: 999;
 }
 .darkshadow {
   text-shadow: 1px 1px 0 gray, -1px 1px 0 gray, 1px -1px 0 gray,
@@ -142,9 +137,25 @@ table {
   }
 }
 
+body {
+  font-family: "Noto Serif JP", serif;
+}
+li {
+  list-style: none;
+  font-size: 1.1em;
+  align-items: center;
+  border-radius: 10px;
+}
+li.h:hover {
+  background-color: teal;
+}
+div.v-card {
+  border-radius: 0 80px 0px 0;
+}
+
 /* 地図 */
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .map {
     width: 500px;
   }
-}
+} */

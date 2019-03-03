@@ -29,7 +29,7 @@
           <v-parallax dark src="./img/9.jpg">
             <v-layout align-center column justify-center>
               <div class="welcome">Tsukuba<br />Shogi Club</div>
-              <v-btn
+              <!-- <v-btn
                 fab
                 dark
                 outline
@@ -37,42 +37,40 @@
                 @click="$vuetify.goTo('#start', 'easing')"
               >
                 <v-icon large>keyboard_arrow_down</v-icon>
-              </v-btn>
+              </v-btn> -->
             </v-layout>
           </v-parallax>
           <v-container fluid id="start">
             <br />
             <h1 class="col">Twitter</h1>
-            <v-card mb-2>
-              <v-container fluid grid-list-lg>
-                <v-layout row wrap>
-                  <v-flex xs12>
-                    <div>
-                      <v-card class="ma-4" style="width: 50%">
-                        <p>
-                          <a
-                            class="twitter-timeline"
-                            data-chrome="”noheader”"
-                            data-chrome="”noscrollbar”"
-                            data-tweet-limit="8"
-                            data-lang="ja"
-                            data-theme="light"
-                            data-link-color="#19CF86"
-                            href="https://twitter.com/tsukubashogi?ref_src=twsrc%5Etfw"
-                            >Tweets by tsukubashogi</a
-                          >
-                          <script
-                            async
-                            src="https://platform.twitter.com/widgets.js"
-                            charset="utf-8"
-                          ></script>
-                        </p>
-                      </v-card>
-                    </div>
-                  </v-flex>
-                </v-layout>
-              </v-container>
-            </v-card>
+            <v-container fluid grid-list-lg>
+              <v-layout row wrap>
+                <v-flex xs12>
+                  <div>
+                    <v-card class="ma-4" style="min-width: 50%">
+                      <p>
+                        <a
+                          class="twitter-timeline"
+                          data-chrome="”noheader”"
+                          data-chrome="”noscrollbar”"
+                          data-tweet-limit="8"
+                          data-lang="ja"
+                          data-theme="light"
+                          data-link-color="#19CF86"
+                          href="https://twitter.com/tsukubashogi?ref_src=twsrc%5Etfw"
+                          >Tweets by tsukubashogi</a
+                        >
+                        <script
+                          async
+                          src="https://platform.twitter.com/widgets.js"
+                          charset="utf-8"
+                        ></script>
+                      </p>
+                    </v-card>
+                  </div>
+                </v-flex>
+              </v-layout>
+            </v-container>
           </v-container>
         </v-app>
       </div>
@@ -82,13 +80,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
     <script>
       new Vue({
-        el: "#app",
-        data() {
-          return {};
-        },
-        mounted() {
-          this.img = `./img/photo${Math.floor(Math.random() * 2)}.png`;
-        }
+        el: "#app"
       });
     </script>
     <style></style>

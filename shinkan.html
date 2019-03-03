@@ -30,55 +30,80 @@
             <h1 class="col">2019年度新歓の案内</h1>
             <v-layout row wrap>
               <v-flex xs12>
-                <li><a href="intro.html"> 将棋部の概要はこちら</a></li>
-                <li>
-                  <a href="http://www.stb.tsukuba.ac.jp/~shinkan/">
-                    新歓祭本部のHPはこちら</a>
-                </li>
-                <h2 class="pt-4" onclick="dispElement(0)">4月6日 新歓祭(1C406)</h2>
+                <ul>
+                  <li><a href="intro.html"> 将棋部の概要はこちら</a></li>
+                  <li>
+                    <a href="http://www.stb.tsukuba.ac.jp/~shinkan/">
+                      新歓祭本部のHPはこちら</a
+                    >
+                  </li>
+                </ul>
+                <h2 class="pt-4" onclick="dispElement(0)">
+                  4月6日 新歓祭(1C406)
+                </h2>
                 <div class="information visible">
-                  <li>1C406にて将棋部もブースを出します。</li>
-                  <li>
-                    そこでは、部員が将棋や歓談のお相手をさせていただきます。
-                  </li>
-                  <li>
-                    将棋を知らない方にも部員が丁寧に教えるのでお気軽にお越しください。
-                  </li>
-                  <li>
-                    当日、新歓の案内が配布されるので、それをよく見ていらして下さい。
-                  </li>
-                  ４月中は部室に誰かしらいるはず(?)なので気軽に来てください！！
-                  <BR />他の新歓の情報が入り次第更新します...(汗)
+                  <ul>
+                    <li>1C406にて将棋部もブースを出します。</li>
+                    <li>
+                      そこでは、部員が将棋や歓談のお相手をさせていただきます。
+                    </li>
+                    <li>
+                      将棋を知らない方にも部員が丁寧に教えるのでお気軽にお越しください。
+                    </li>
+                    <li>
+                      当日、新歓の案内が配布されるので、それをよく見ていらして下さい。
+                    </li>
+                    ４月中は部室に誰かしらいるはず(?)なので気軽に来てください！！
+                    <BR />他の新歓の情報が入り次第更新します...(汗)
+                  </ul>
                 </div>
 
                 <h2 class="pt-4" onclick="dispElement(1)">
                   4月12日 文化系サークル合同新歓(第二エリア食堂)
                 </h2>
                 <div class="information visible">
-                  <li>
-                    第二エリア食堂にて文化系サークル合同新歓を行います。
-                  </li>
+                  <ul>
+                    <li>
+                      第二エリア食堂にて文化系サークル合同新歓を行います。
+                    </li>
+                  </ul>
                 </div>
-                <h2 class="pt-4" onclick="dispElement(2)">4月13日 全体活動(部室)</h2>
+                <h2 class="pt-4" onclick="dispElement(2)">
+                  4月13日 全体活動(部室)
+                </h2>
                 <div class="information visible">
-                  <li>
-                    文化系サークル館一階の部室にて18:30から全体活動を行います。
-                  </li>
-                </div>
-
-                <h2 class="pt-4" onclick="dispElement(3)">4月20日 全体活動(部室)</h2>
-                <div class="information visible">
-                  <li>部室にて18:30から全体活動を行います。</li>
-                </div>
-
-                <h2 class="pt-4" onclick="dispElement(4)">4月21日 新歓大会(部室)</h2>
-                <div class="information visible">
-                  <li>部室にて13:00から新歓大会を行います。</li>
+                  <ul>
+                    <li>
+                      文化系サークル館一階の部室にて18:30から全体活動を行います。
+                    </li>
+                  </ul>
                 </div>
 
-                <h2 class="pt-4" onclick="dispElement(5)">4月27日 全体活動(部室)</h2>
+                <h2 class="pt-4" onclick="dispElement(3)">
+                  4月20日 全体活動(部室)
+                </h2>
                 <div class="information visible">
-                  <li>部室にて18:30から全体活動を行います。</li>
+                  <ul>
+                    <li>部室にて18:30から全体活動を行います。</li>
+                  </ul>
+                </div>
+
+                <h2 class="pt-4" onclick="dispElement(4)">
+                  4月21日 新歓大会(部室)
+                </h2>
+                <div class="information visible">
+                  <ul>
+                    <li>部室にて13:00から新歓大会を行います。</li>
+                  </ul>
+                </div>
+
+                <h2 class="pt-4" onclick="dispElement(5)">
+                  4月27日 全体活動(部室)
+                </h2>
+                <div class="information visible">
+                  <ul>
+                    <li>部室にて18:30から全体活動を行います。</li>
+                  </ul>
                 </div>
                 <h2 class="pt-4">新歓（お食事）</h2>
                 <ul>
@@ -110,5 +135,11 @@
         el: "#app"
       });
     </script>
+    <style>
+    li {
+      padding-top: 5px;
+      list-style:square;
+    }
+    </style>
   </body>
 </html>

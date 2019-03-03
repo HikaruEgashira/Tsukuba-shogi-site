@@ -37,7 +37,7 @@
                     </v-card-title>
                   </v-card>
                   <div v-for="(nthMenber,i) in menbers" :key="i">
-                    <v-card class="my-3" v-if="nthMenber.isMenber">
+                    <v-card class="my-3 elevation-1" v-if="nthMenber.isMenber">
                       <v-card-title primary-title>
                         <div>
                           <div class="headline">{{ nthMenber.menber }}</div>
@@ -88,7 +88,7 @@
             {isMenber: false, grade: 'B3'},
             {isMenber: true, menber: '海老原', description: 'レアキャラ。国際総合学類所属。'},
             {isMenber: true, menber: '川越', description: '将棋部のマスコットor姫 がおそらく部内でお酒が一番強い...? 工学システム学類所属。'},
-            {isMenber: true, menber: '川太郎', description: 'よく部室にいる。将棋のやる気はともかく囲碁とポケモンカードのモチベはすこぶる高い編入生。情報科学類所属。'},
+            {isMenber: true, menber: '川又', description: 'よく部室にいる。将棋のやる気はともかく囲碁とポケモンカードのモチベはすこぶる高い編入生。情報科学類所属。'},
             {isMenber: true, menber: '小山', description: '棋力、体力、雀力、煽り力をすべて兼ね備えて入部してきた将棋部の申し子。もはや佇まいは院生のごとし。２切れの鬼。社会学類所属。'},
             {isMenber: true, menber: '杉山', description: '戦法の研究に余念がない。ほめると調子に乗るが、ほめられなくても調子に乗る。会うと必ずおごってくれる。物理学類所属。'},
             {isMenber: true, menber: '平松', description: '囲碁と麻雀からの刺客。一番先輩を立ててくれる常識人。応用理工学類所属。'},
