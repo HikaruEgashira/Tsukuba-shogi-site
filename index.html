@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ja">
   <head>
     <link href="src/main.css" type="text/css" rel="stylesheet" />
@@ -16,7 +16,10 @@
     />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta content="#008080" name="theme-color" />
-    <meta name="Description" content="当ホームページは筑波大学将棋部の公式ページです。当ホームページの記載内容については万全を期しておりますが、その内容については一切の保証をしないものと致します。当ホームページに使用されている画像は無断転載、複製（コピー）、二次加工、配布、販売を禁止しています。以上のことを了解された方は下の入口からお入りください。">
+    <meta
+      name="Description"
+      content="当ホームページは筑波大学将棋部の公式ページです。当ホームページの記載内容については万全を期しておりますが、その内容については一切の保証をしないものと致します。当ホームページに使用されている画像は無断転載、複製（コピー）、二次加工、配布、販売を禁止しています。以上のことを了解された方は下の入口からお入りください。"
+    />
     <title>筑波大学将棋部</title>
   </head>
   <body>
@@ -38,7 +41,9 @@
               </v-btn> -->
               <ul class="pa-3 font-weight-bold top">
                 <li v-for="item in items" style="height: 10%" class="h">
-                  <a :href="item.link" style="color: black" v-cloak>{{ item.title }}</a>
+                  <a :href="item.link" style="color: black" v-cloak>{{
+                    item.title
+                  }}</a>
                 </li>
               </ul>
             </v-layout>
@@ -49,13 +54,18 @@
                 <h1 class="col">Menu</h1>
                 <div v-for="(item,i) in items">
                   <v-card class="mt-4">
-                    <v-img class="white--text" max-height="200px" :src="item.src">
+                    <v-img
+                      class="white--text"
+                      max-height="200px"
+                      :src="item.src"
+                    >
                       <v-container fill-height fluid>
                         <v-layout fill-height>
                           <v-flex xs12>
                             <span
                               class="headline darkshadow"
-                              style="font-weight:bold" v-cloak
+                              style="font-weight:bold"
+                              v-cloak
                               >{{ item.title }}</span
                             >
                           </v-flex>
@@ -120,89 +130,80 @@
       </v-app>
     </div>
 
-    <script
-      crossorigin="anonymous"
-      src="https://cdn.polyfill.io/v2/polyfill.min.js"
-    ></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.js"></script>
     <script>
       new Vue({
         el: "#app",
-        data() {
-          return {
-            nav: false,
-            items: [
-              {
-                title: "将棋部の紹介",
-                description:
-                  "将棋部の紹介です。入部希望の方、受験生の方はどうぞ。",
-                link: "intro.html",
-                src: "./img/1.jpg",
-                lsrc: "./img/lazy/1.webp"
-              },
-              {
-                title: "新歓の案内",
-                description:
-                  "本年度の新歓のご案内。「将棋部の紹介」と合わせてご覧下さい。",
-                link: "shinkan.html",
-                src: "./img/2.jpg",
-                lsrc: "./img/lazy/2.webp"
-              },
-              {
-                title: "実績",
-                description:
-                  "将棋部の実績が見られます。部員の皆様もご覧下さい。",
-                link: "kekka/2018.html",
-                src: "./img/3.jpg",
-                lsrc: "./img/lazy/3.webp"
-              },
-              {
-                title: "部員紹介",
-                description: "将棋部の部員紹介です。",
-                link: "shoukai.html",
-                src: "./img/4.jpg",
-                lsrc: "./img/lazy/4.webp"
-              },
-              {
-                title: "イベント",
-                description: "大会・その他イベントの詳細はこちら",
-                link: "event.html",
-                src: "./img/5.jpg",
-                lsrc: "./img/lazy/5.webp"
-              },
-              {
-                title: "掲示板",
-                description: "どなたでも、気軽に書き込んでください。",
-                link: "http://jbbs.livedoor.jp/game/45916/",
-                src: "./img/6.jpg",
-                lsrc: "./img/lazy/6.webp"
-              },
-              {
-                title: "リンク",
-                description: "他大学の将棋部などのリンク紹介です。",
-                link: "link.html",
-                src: "./img/7.jpg",
-                lsrc: "./img/lazy/7.webp"
-              },
-              {
-                title: "筑波大学将棋部Twitter",
-                description: "筑波大学将棋部の最新情報をお伝えします。",
-                link: "twitter.html",
-                src: "./img/8.jpg",
-                lsrc: "./img/lazy/8.webp"
-              },
-              {
-                title: "部内専用ページ",
-                description: "入室にはパスワードが必要です。",
-                link: "gate/gate.cgi",
-                src: ""
-              }
-            ]
-          };
-        },
-        mounted() {
-          this.img = `./img/photo${Math.floor(Math.random() * 2)}.jpg`;
+        data: {
+          nav: false,
+          items: [
+            {
+              title: "将棋部の紹介",
+              description:
+                "将棋部の紹介です。入部希望の方、受験生の方はどうぞ。",
+              link: "intro.html",
+              src: "./img/1.jpg",
+              lsrc: "./img/lazy/1.webp"
+            },
+            {
+              title: "新歓の案内",
+              description:
+                "本年度の新歓のご案内。「将棋部の紹介」と合わせてご覧下さい。",
+              link: "shinkan.html",
+              src: "./img/2.jpg",
+              lsrc: "./img/lazy/2.webp"
+            },
+            {
+              title: "実績",
+              description: "将棋部の実績が見られます。部員の皆様もご覧下さい。",
+              link: "kekka/2018.html",
+              src: "./img/3.jpg",
+              lsrc: "./img/lazy/3.webp"
+            },
+            {
+              title: "部員紹介",
+              description: "将棋部の部員紹介です。",
+              link: "shoukai.html",
+              src: "./img/4.jpg",
+              lsrc: "./img/lazy/4.webp"
+            },
+            {
+              title: "イベント",
+              description: "大会・その他イベントの詳細はこちら",
+              link: "event.html",
+              src: "./img/5.jpg",
+              lsrc: "./img/lazy/5.webp"
+            },
+            {
+              title: "掲示板",
+              description: "どなたでも、気軽に書き込んでください。",
+              link: "http://jbbs.livedoor.jp/game/45916/",
+              src: "./img/6.jpg",
+              lsrc: "./img/lazy/6.webp"
+            },
+            {
+              title: "リンク",
+              description: "他大学の将棋部などのリンク紹介です。",
+              link: "link.html",
+              src: "./img/7.jpg",
+              lsrc: "./img/lazy/7.webp"
+            },
+            {
+              title: "筑波大学将棋部Twitter",
+              description: "筑波大学将棋部の最新情報をお伝えします。",
+              link: "twitter.html",
+              src: "./img/8.jpg",
+              lsrc: "./img/lazy/8.webp"
+            },
+            {
+              title: "部内専用ページ",
+              description: "入室にはパスワードが必要です。",
+              link: "gate/gate.cgi",
+              src: ""
+            }
+          ]
         }
       });
     </script>
