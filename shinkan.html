@@ -26,7 +26,21 @@
     <div>
       <div id="app">
         <v-app>
-          <v-container fluid>
+            <v-parallax dark src="../img/3.jpg">
+              <v-layout align-center column justify-center>
+                <div class="welcome">Tsukuba<br />Shogi Club</div>
+                <!-- <v-btn
+                  fab
+                  dark
+                  outline
+                  v-show="$vuetify.breakpoint.xsOnly"
+                  @click="$vuetify.goTo('#start', 'easing')"
+                  style="position: absolute; bottom: 5%"
+                >
+                  <v-icon large>keyboard_arrow_down</v-icon>
+                </v-btn> -->
+              </v-layout>
+            </v-parallax> <v-container fluid>
             <h1 class="col">2019年度新歓の案内</h1>
             <v-layout row wrap>
               <v-flex xs12>
@@ -130,6 +144,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: "#app"
+      });
+    </script>
     <script>
       new Vue({
         el: "#app"
