@@ -37,19 +37,11 @@
             </v-parallax>
             <v-container fluid id="start">
               <h1 class="col">
-                  部員紹介
+                  部員紹介<span class="gray--text">※学年・五十音順（2019年度)</span>
               </h1>
               <v-container fluid grid-list-lg>
                 <v-layout row wrap>
                   <v-flex xs12>
-                    <v-card>
-                      <v-card-title primary-title>
-                        <div>
-                          <span class="gray--text">※学年・五十音順</span>
-                          <span class="grey--text">※敬称略（2019年度)</span>
-                        </div>
-                      </v-card-title>
-                    </v-card>
                     <div v-for="(nthMenber,i) in menbers" :key="i">
                       <v-card
                         class="my-3 elevation-1"
