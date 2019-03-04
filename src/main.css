@@ -149,7 +149,9 @@ li.h:hover {
 div.v-card {
   border-radius: 4px 80px 4px 4px;
 }
-
+[v-cloak] {
+  display: none;
+}
 /* 地図 */
 /* @media (min-width: 1000px) {
   .map {

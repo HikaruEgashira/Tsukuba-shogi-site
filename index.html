@@ -38,7 +38,7 @@
               </v-btn> -->
               <ul class="pa-3 font-weight-bold top">
                 <li v-for="item in items" style="height: 10%" class="h">
-                  <a :href="item.link" style="color: black">{{ item.title }}</a>
+                  <a :href="item.link" style="color: black" v-cloak>{{ item.title }}</a>
                 </li>
               </ul>
             </v-layout>
@@ -55,7 +55,7 @@
                           <v-flex xs12>
                             <span
                               class="headline darkshadow"
-                              style="font-weight:bold"
+                              style="font-weight:bold" v-cloak
                               >{{ item.title }}</span
                             >
                           </v-flex>
@@ -63,7 +63,7 @@
                       </v-container>
                     </v-img>
                     <v-card-text>
-                      <span>{{ item.description }}</span>
+                      <span v-cloak>{{ item.description }}</span>
                     </v-card-text>
                     <v-btn flat color="teal lighten-3" :href="item.link"
                       >read more</v-btn
