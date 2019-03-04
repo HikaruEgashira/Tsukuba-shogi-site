@@ -66,7 +66,7 @@ table {
 /* table要素 END */
 /* text START*/
 .emphasize {
-  font-size: 40px;
+  font-size: 20px;
   color: red;
 }
 
@@ -137,9 +137,6 @@ table {
   }
 }
 
-body {
-  font-family: "Noto Serif JP", serif;
-}
 li {
   list-style: none;
   font-size: 1.1em;
@@ -150,7 +147,7 @@ li.h:hover {
   background-color: teal;
 }
 div.v-card {
-  border-radius: 0 80px 0px 0;
+  border-radius: 4px 80px 4px 4px;
 }
 
 /* 地図 */
