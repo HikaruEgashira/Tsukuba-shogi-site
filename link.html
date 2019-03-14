@@ -78,7 +78,7 @@
                       </v-card-title>
                     </v-card>
                     <v-card ripple hover v-else>
-                      <v-card-title primary-title @click="link(nthMenber.link)">
+                      <v-card-title primary-title :href="nthMenber.link">
                         <div>
                           <div class="headline" v-cloak>
                             {{ nthMenber.name }}
@@ -313,11 +313,6 @@
                 "http://homepage2.nifty.com/shogi-hitatinakasibu/index.htm"
             }
           ]
-        },
-        methods: {
-          link: function (link) {
-            location.href = link;
-          }
         }
       });
     </script>
