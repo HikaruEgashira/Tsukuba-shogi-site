@@ -7,9 +7,10 @@ h1.col {
   border-radius: 10px;
 }
 h2 {
-  color: #ff7500;
+  /* color: #ff7500; */
+  color: teal;
   text-align: left;
-  border-bottom: solid orange;
+  border-bottom: solid teal;
   padding-left: 5%;
   margin-top: 0;
 }
@@ -72,13 +73,19 @@ table {
   outline-style: outset;
   width: 100%;
 }
+#shadow-1 {
+  text-shadow: 1px 1px 0 aliceblue, -1px 1px 0 aliceblue, 1px -1px 0 aliceblue,
+  -1px -1px 0 aliceblue;
+}
+#shadow-03 {
+  text-shadow: 0.3px 0.3px 0 aliceblue, -0.3px 0.3px 0 aliceblue, 0.3px -0.3px 0 aliceblue,
+  -0.3px -0.3px 0 aliceblue;
+}
 .welcome {
   font-family: "Playfair Display", serif;
   letter-spacing: 0.4em;
   font-size: 40px;
   color: black;
-  text-shadow: 1px 1px 0 aliceblue, -1px 1px 0 aliceblue, 1px -1px 0 aliceblue,
-    -1px -1px 0 aliceblue;
   position: absolute;
   top: 10%;
   left: 10%;
