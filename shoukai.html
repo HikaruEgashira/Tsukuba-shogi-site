@@ -29,14 +29,11 @@
           <v-content app>
             <v-parallax dark src="./img/9.jpg">
               <v-layout align-center column justify-center>
-                <div class="welcome">Tsukuba<br />Shogi Club</div>
-                <!-- <v-btn fab dark outline v-show="$vuetify.breakpoint.xsOnly" @click="$vuetify.goTo('#start', 'easing')">
-              <v-icon large>keyboard_arrow_down</v-icon>
-            </v-btn> -->
+                <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span><p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p></div>
               </v-layout>
             </v-parallax>
             <v-container fluid id="start">
-              <article style="padding-left: 10vw; width: 80vw">
+              <article>
               <h1 class="col">
                   部員紹介<span class="gray--text">※学年・五十音順（2019年度)</span>
               </h1>
@@ -63,6 +60,7 @@
                         </v-card-title>
                       </v-card>
                     </div>
+                    <div><a href="http://www.stb.tsukuba.ac.jp/~shogi/">筑波大学将棋部ホームページに戻る</a></div>
                   </v-flex>
                 </v-layout>
               </v-container>
@@ -82,20 +80,13 @@
         data: {
           menbers: [
             { isMenber: false, grade: "M2" },
-            { isMenber: true, menber: "清水", description:
-                "学校の仕事で多忙な紀州人。Twitter5割、全代会5割でできている。将棋は……彼の厚い攻めと謎のボケを受け止めるのは至難の業。"
-            },
-            { isMenber: true, menber: "中山", description:
-                "部室にいる頻度は負けない元部長。単位大丈夫か？ 携帯電話の置き忘れ回数は誰にも負けない。 使用戦法への一途な思いもだれにも負けない。 孤独にも負けない！"
-            },
-            { isMenber: false, grade: "M1" },
             { isMenber: true, menber: "小野", description:
                 "先輩だろうと何だろうと隙あらば煽ってくる危険人物。しかし盤上ではわりとおとなしい？"
             },
             { isMenber: true, menber: "久保田", description:
                 "今日の服装は躍動感にあふれているんですよ。色彩検定2級、けど飽きたらしい。 常に元気そうに見えるは服装の色のせいなのか？ 使う戦法はきｍきｍイことで定評を得ている。"
             },
-            { isMenber: false, grade: "B4" },
+            { isMenber: false, grade: "M1" },
             { isMenber: true, menber: "上迫", description:
                 "上様、神様、と呼ばれ、部内で崇め奉られている。 途中入部したさわやか系イケメン。 国際総合学類所属。"
             },
@@ -123,7 +114,7 @@
             { isMenber: true, menber: "松本", description:
                 "研究室に軟禁されており、なかなか部室にはいらっしゃらない激レア。 化学類所属。"
             },
-            { isMenber: false, grade: "B3" },
+            { isMenber: false, grade: "B4" },
             { isMenber: true, menber: "海老原", description: "レアキャラ。国際総合学類所属。"
             },
             { isMenber: true, menber: "川越", description:
@@ -150,7 +141,7 @@
             { isMenber: true, menber: "吉岡", description:
                 "秋学期になって出現率がアップした山陰の民。いつもにこにこしているが闇が深い。馬に造詣が深かったりするかもしれない。 物理学類所属。"
             },
-            { isMenber: false, grade: "B2" },
+            { isMenber: false, grade: "B3" },
             { isMenber: true, menber: "梅田", description:
                 "好きな食べ物は牛丼。嫌いな食べ物はナス。 ゴキ中バスター。超急戦は全国トップクラス。 おそらく現役最強。 社会工学類所属。"
             },
@@ -172,7 +163,7 @@
             { isMenber: true, menber: "三戸部", description:
                 "西木野真姫と渡辺曜推しのラブライバー。 ラブライブの話をすれば仲良くなれるかもしれない。 戦型チェック担当。 情報科学類所属。"
             },
-            { isMenber: false, grade: "B１" },
+            { isMenber: false, grade: "B2" },
             { isMenber: true, menber: "井上", description:
                 "将棋部の癒し枠。たまにしか出現しないので出会えたらラッキー。社会工学類所属。"
             },
@@ -189,6 +180,13 @@
             },
             { isMenber: true, menber: "西沢", description:
                 "キラキラJD。将棋部を住処としている。辛党であおりの代名詞。渉外担当兼戦型チェック担当。芸術専門学群所属。"
+            },
+            { isMenber: false, grade: "OB" },
+            { isMenber: true, menber: "清水", description:
+                "学校の仕事で多忙な紀州人。Twitter5割、全代会5割でできている。将棋は……彼の厚い攻めと謎のボケを受け止めるのは至難の業。"
+            },
+            { isMenber: true, menber: "中山", description:
+                "部室にいる頻度は負けない元部長。単位大丈夫か？ 携帯電話の置き忘れ回数は誰にも負けない。 使用戦法への一途な思いもだれにも負けない。 孤独にも負けない！"
             }
           ]
         }

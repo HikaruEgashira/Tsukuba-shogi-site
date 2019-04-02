@@ -29,22 +29,9 @@
           <v-parallax dark src="./img/a.jpg" style="height: 90vh">
             <v-layout>
               <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span><p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p></div>
-
-              <!-- <v-btn
-                fab
-                dark
-                outline
-                v-if="$vuetify.breakpoint.xsOnly"
-                @click="$vuetify.goTo('#start', 'easing')"
-                style="position: absolute; bottom: 5%; right: 5%;"
-              >
-              <v-icon large>keyboard_arrow_down</v-icon>
-              </v-btn> -->
               <ul class="pa-3 font-weight-bold top" v-cloak>
                 <li v-for="item in items" style="height: 10%" class="h">
-                  <a :href="item.link" style="color: black" v-cloak>{{
-                    item.title
-                  }}</a>
+                  <a :href="item.link" style="color: black" v-cloak>{{ item.title }}</a>
                 </li>
               </ul>
             </v-layout>
@@ -81,15 +68,6 @@
                     >
                   </v-card>
                 </div>
-                <div class="pa-2">
-                  <v-carousel hide-delimiters hide-controls>
-                    <v-carousel-item
-                      v-for="(item,i) in items"
-                      :key="i"
-                      :src="item.src"
-                    ></v-carousel-item>
-                  </v-carousel>
-                </div>
                 <h1 class="col" v-cloak>Access</h1>
                 <v-card class="mt-2 mb-4">
                   <iframe
@@ -107,7 +85,7 @@
                     <h3 class="headline font-weight-bold pb-2" v-cloak>
                       Latest Update
                     </h3>
-                    <p v-cloak>2019年 3月5日　2019年の新歓情報追加</p>
+                    <p v-cloak>2019年 4月1日　2019年の新歓情報追加</p>
                     <p v-cloak>
                       現管理者は情報科学類１年、江頭です。
                     </p>

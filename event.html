@@ -21,17 +21,7 @@
       <v-app>
         <v-parallax dark src="./img/5.jpg">
           <v-layout align-center column justify-center>
-            <div class="welcome">Tsukuba<br>Shogi Club</div>
-            <!-- <v-btn
-                fab
-                dark
-                outline
-                v-show="$vuetify.breakpoint.xsOnly"
-                @click="$vuetify.goTo('#start', 'easing')"
-                style="position: absolute; bottom: 5%"
-              >
-                <v-icon large>keyboard_arrow_down</v-icon>
-              </v-btn> -->
+            <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span><p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p></div>
           </v-layout>
         </v-parallax>
         <v-container fluid id="start">
@@ -57,6 +47,7 @@
             <div class="visible pa-4">
               <img src="src/syoutyuu.jpg" alt="小中学生将棋大会" />
             </div>
+            <div><a href="http://www.stb.tsukuba.ac.jp/~shogi/">筑波大学将棋部ホームページに戻る</a></div>
           </article>
         </v-container>
       </v-app>

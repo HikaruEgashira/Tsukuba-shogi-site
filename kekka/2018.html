@@ -9,12 +9,13 @@
     rel="stylesheet"/>
   　<link
     href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
-    rel="stylesheet" <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1.5"
     />
-    <TITLE>大会の結果・予定－筑波大学将棋部</TITLE>
+    <title>大会の結果・予定－筑波大学将棋部</title>
     <link rel="stylesheet" type="text/css" href="../src/main.css" />
     <script src="../js/main.js"></script>
   </head>
@@ -26,14 +27,11 @@
           <v-content app>
             <v-parallax dark src="../img/4.jpg">
                <v-layout align-center column justify-center>
-                 <div class="welcome">Tsukuba<br />Shogi Club</div>
-                 <!-- <v-btn fab dark outline v-show="$vuetify.breakpoint.xsOnly" @click="$vuetify.goTo('#start', 'easing')">
-                 <v-icon large>keyboard_arrow_down</v-icon>
-                 </v-btn> -->
+                  <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span><p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p></div>
                </v-layout>
             </v-parallax>
             <v-container fluid id="start">
-              <article style="padding-left: 10vw; width: 80vw">
+              <article>
                <h1 class="col">
                  筑波大学将棋部の実績 <small>(クリックで詳細が見られます)</small>
                </h1>
@@ -146,6 +144,7 @@
                    <h4>１０月　前川（自然４年）…茨城新聞社杯　ベスト８</h4>
                    <h4>１１月　筑波大学将棋部…関東大学将棋リーグ春季団体戦　Ａ級５位</h4>
                    <p><a href="2007.html"> 2007年度の団体戦の結果はこちら（詳細版）</a></p>
+                <div><a href="http://www.stb.tsukuba.ac.jp/~shogi/">筑波大学将棋部ホームページに戻る</a></div>
             </v-container>
           </v-content>
         </v-app>
