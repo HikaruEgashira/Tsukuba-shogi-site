@@ -14,9 +14,7 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="src/index.css" />
     <link rel="stylesheet" type="text/css" href="src/main.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="src/introduction.css" />
     <script src="js/main.js"></script>
     <title>新歓案内ー筑波大学将棋部</title>
     <link rel="stylesheet" type="text/css" href="src/main.css" />
@@ -26,120 +24,103 @@
     <div>
       <div id="app">
         <v-app> 
-            <v-parallax dark src="../img/3.jpg">
+            <v-parallax dark src="./img/3.jpg">
               <v-layout align-center column justify-center>
-                <div class="welcome">Tsukuba<br />Shogi Club</div>
-                <!-- <v-btn
-                  fab
-                  dark
-                  outline
-                  v-show="$vuetify.breakpoint.xsOnly"
-                  @click="$vuetify.goTo('#start', 'easing')"
-                  style="position: absolute; bottom: 5%"
-                >
-                  <v-icon large>keyboard_arrow_down</v-icon>
-                </v-btn> -->
+                  <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span><p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p></div>
               </v-layout>
             </v-parallax> <v-container fluid>
-            <article style="padding-left: 10vw; width: 80vw">
+            <article>
             <h1 class="col">2019年度新歓の案内</h1>
             <v-layout row wrap>
               <v-flex xs12>
-                <ul>
-                <p>
-                  <li><a href="intro.html"> 将棋部の概要はこちら</a></li>
-                </p>
-                <p>
-                  <li><a href="http://www.stb.tsukuba.ac.jp/~shinkan/">
-                      新歓祭本部のHPはこちら</a></li>
-                </p>
-                </ul>
-                <h2 class="pt-5 pb-3" onclick="dispElement(0)">
-                  4月6日 新歓祭(1C406)
+                <div class="py-4">
+                  <p style="color: grey; text-decoration: underline">投稿日: 2019年4月1日</p>
+                  <p>
+                    将棋部の概要は<a href="intro.html">こちら</a>
+                  </p>
+                  <p>
+                    新歓祭本部のHPは<a href="http://www.stb.tsukuba.ac.jp/~shinkan/">こちら</a>
+                  </p>
+                </div>
+                <p>筑波大学入学者の皆様</p>
+                <div class="py-4">
+                  <p>筑波大学への合格、誠におめでとうございます。筑波大学将棋部では新歓時期の4月中はいつでも先輩方がいらっしゃいます。皆様気軽に足を運んでみてくださいね♪</p>
+                  <p>毎週金曜日がミーティングとなっており、その日は新入生に飯をおごる予定にしています。</p>
+                </div>
+                <h2 class="pt-5" onclick="dispElement(0)">
+                  4月7日 新歓祭
                 </h2>
                 <div class="visible pa-4">
-                  <ul>
-                    <li>1C406にて将棋部もブースを出します。</li>
-                    <li>
+                    <p>将棋部もブースを出したいとおもっております。</p>
+                    <p>
                       そこでは、部員が将棋や歓談のお相手をさせていただきます。
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                       将棋を知らない方にも部員が丁寧に教えるのでお気軽にお越しください。
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                       当日、新歓の案内が配布されるので、それをよく見ていらして下さい。
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                     ４月中は部室に誰かしらいるはず(?)なので気軽に来てください！！
-                    </li>
+                    </p>
                     <BR />他の新歓の情報が入り次第更新します...(汗)
-                  </ul>
                 </div>
 
-                <h2 class="pt-5 pb-3" onclick="dispElement(1)">
+                <!-- <h2 class="pt-5" onclick="dispElement(1)">
                   4月12日 文化系サークル合同新歓(第二エリア食堂)
                 </h2>
                 <div class="visible pa-4">
-                  <ul>
-                    <li>
+                    <p>
                       第二エリア食堂にて文化系サークル合同新歓を行います。
-                    </li>
-                  </ul>
-                </div>
-                <h2 class="pt-5 pb-3" onclick="dispElement(2)">
-                  4月13日 全体活動(部室)
+                    </p>
+                </div> -->
+                <h2 class="pt-5" onclick="dispElement(2)">
+                  4月12日 全体活動(部室)
                 </h2>
                 <div class="visible pa-4">
-                  <ul>
-                    <li>文化系サークル館一階の部室にて18:30から全体活動を行います。</li>
-                  </ul>
+                    <p>文化系サークル館一階の部室にて18:30から全体活動を行います。</p>
                 </div>
 
-                <h2 class="pt-5 pb-3" onclick="dispElement(3)">
-                  4月20日 全体活動(部室)
+                <h2 class="pt-5" onclick="dispElement(3)">
+                  4月19日 全体活動(部室)
                 </h2>
                   <div class="visible pa-4">
-                    <ul>
-                      <li>部室にて18:30から全体活動を行います。</li>
-                    </ul>
+                      <p>部室にて18:30から全体活動を行います。</p>
                   </div>
 
-                <h2 class="pt-5 pb-3" onclick="dispElement(4)">
-                  4月21日 新歓大会(部室)
+                <h2 class="pt-5" onclick="dispElement(4)">
+                  4月 新歓大会(部室, 時期未定)
                 </h2>
                 <div class="visible pa-4">
-                  <ul>
-                    <li>部室にて13:00から新歓大会を行います。</li>
-                  </ul>
+                    <p>部室にて13:00から新歓大会を行う予定です。</p>
                 </div>
 
-                <h2 class="pt-5 pb-3" onclick="dispElement(5)">
-                  4月27日 全体活動(部室)
+                <h2 class="pt-5" onclick="dispElement(5)">
+                  4月26日 本新歓(部室→一太郎)
                 </h2>
                   <div class="visible pa-4">
-                    <ul>
-                      <li>部室にて18:30から全体活動を行います。</li>
-                    </ul>
+                      <p>お好み焼き店の一太郎にて18:00から本新歓を行います。</p>
                   </div>
-                <h2 class="pt-5 pb-3">新歓（お食事）</h2>
+                <h2 class="pt-5">新歓（お食事）</h2>
                 <div class="visible pa-4">
-                  <ul>
-                    <li>4月15日、22日に、本新歓があります。</li>
-                    <li>是非、奮ってご参加下さい。</li>
-                    <li>詳しい時間と場所は後日載せます...m(_ _)m</li>
-                  </ul>
+                    <p>4月15日、22日に、本新歓があります。</p>
+                    <p>是非、奮ってご参加下さい。</p>
+                    <p>詳しい時間と場所は後日載せます...m(_ _)m</p>
                 </div>
-                <h2 class="pt-5 pb-3">新歓大会について</h2>
+                <h2 class="pt-5">新歓大会について</h2>
                 <div class="visible pa-4">
-                <ul>
-                  <li>
+                  <p>
                     4/18(土)に行う予定です。場所は<a
                       href="http://www.tsukuba.ac.jp/access/map_central.html"
                       >文化系サークル会館2階</a
                     >(地図中K7)です。
-                  </li>
-                </ul>
+                  </p>
+                  <p>Googleマップは<a href="https://www.google.com/maps/place/%E3%80%92305-0006+%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%A4%E3%81%8F%E3%81%B0%E5%B8%82%E5%A4%A9%E7%8E%8B%E5%8F%B0%EF%BC%91%E4%B8%81%E7%9B%AE+%E6%96%87%E5%8C%96%E7%B3%BB%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB%E9%A4%A8/@36.1088074,140.1013781,17z/data=!4m12!1m6!3m5!1s0x60220c06df70692d:0x96c6d42b9b4a626c!2z562R5rOi5aSn5a2mIOaWh-WMluezu-OCteODvOOCr-ODq-S8mumkqA!8m2!3d36.1088074!4d140.1035668!3m4!1s0x60220c06df6493b3:0xd26ed93a3085157!8m2!3d36.1087855!4d140.1036399">
+                    こちら</a>から!
+                  </p>
                 </div>
+                <div><a href="http://www.stb.tsukuba.ac.jp/~shogi/">筑波大学将棋部ホームページに戻る</a></div>
               </v-flex>
             </v-layout>
             </article>
