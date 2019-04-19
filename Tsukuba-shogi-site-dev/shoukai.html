@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&amp;subset=japanese"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>部員紹介ー筑波大学将棋部</title>
+    <link rel="stylesheet" type="text/css" href="src/main.css" />
+  </head>
+
+  <body>
+    <div>
+      <div id="app">
+        <v-app>
+          <v-content app>
+            <v-parallax dark src="./img/9.jpg">
+              <v-layout align-center column justify-center>
+                <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span><p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p></div>
+              </v-layout>
+            </v-parallax>
+            <v-container fluid id="start">
+              <article>
+              <h1 class="col">
+                  部員紹介<span class="gray--text">※学年・五十音順（2019年度)</span>
+              </h1>
+              <v-container fluid grid-list-lg>
+                <v-layout row wrap>
+                  <v-flex xs12>
+                    <div v-for="(nthMenber,i) in menbers" :key="i">
+                      <v-card
+                        class="my-3 elevation-1"
+                        v-if="nthMenber.isMenber"
+                      >
+                        <v-card-title primary-title>
+                          <div>
+                            <div class="headline">{{ nthMenber.menber }}</div>
+                            <span>{{ nthMenber.description }}</span>
+                          </div>
+                        </v-card-title>
+                      </v-card>
+                      <v-card class="mt-5 mb-3" color="teal" dark v-else>
+                        <v-card-title primary-title>
+                          <div>
+                            <div class="title">{{ nthMenber.grade }}</div>
+                          </div>
+                        </v-card-title>
+                      </v-card>
+                    </div>
+                    <div><a href="http://www.stb.tsukuba.ac.jp/~shogi/">筑波大学将棋部ホームページに戻る</a></div>
+                  </v-flex>
+                </v-layout>
+              </v-container>
+              </article>
+            </v-container>
+          </v-content>
+        </v-app>
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          menbers: [
+            { isMenber: false, grade: "M2" },
+            { isMenber: true, menber: "小野", description:
+                "先輩だろうと何だろうと隙あらば煽ってくる危険人物。しかし盤上ではわりとおとなしい？"
+            },
+            { isMenber: true, menber: "久保田", description:
+                "今日の服装は躍動感にあふれているんですよ。色彩検定2級、けど飽きたらしい。 常に元気そうに見えるは服装の色のせいなのか？ 使う戦法はきｍきｍイことで定評を得ている。"
+            },
+            { isMenber: false, grade: "M1" },
+            { isMenber: true, menber: "上迫", description:
+                "上様、神様、と呼ばれ、部内で崇め奉られている。 途中入部したさわやか系イケメン。 国際総合学類所属。"
+            },
+            { isMenber: true, menber: "大坪", description:
+                "遅れてやってきた救世主。文武両道だが棋力も部内最強レベル。医学類所属。"
+            },
+            { isMenber: true, menber: "小原", description:
+                "将棋部元部長。 人がいいのか面倒ごとを気づいたら引き受けているような．．． 競馬の授業をとるほどの競馬好き 地球学類所属。"
+            },
+            { isMenber: true, menber: "柏木", description:
+                "あだ名は「ゆきりん」。特にAKB に興味があるわけではない。 居飛車本格派（？）。困ったら大駒きってから考えます。 情報科学類所属。"
+            },
+            { isMenber: true, menber: "酒井", description:
+                "とにかく明るい将棋部のムードメーカー。 ポカが多いのか、部室にいると彼の「やらかした～」をよく聞く気がする。（筆者調べ） 応用理工学類所属。"
+            },
+            { isMenber: true, menber: "菅", description:
+                "レアキャラ。だいたい金曜日しか来ない。 会うと次の日いいことがあるかも。 応用理工学類所属。"
+            },
+            { isMenber: true, menber: "高嶋", description:
+                "はるばる北の国からやってきた煽りの伝道師。 茨城は暑いのか、毎日2リットルペットボトルの水を飲んでいる。 名言は「飛車は角の二倍強いんですよ」「ゼンツ」。知識情報・図書館学類所属。"
+            },
+            { isMenber: true, menber: "田中", description:
+                "常にほんわかした雰囲気で、ある意味将棋部の癒し。 と思っていたのだが、プロレス好きということが発覚。 数学類所属。"
+            },
+            { isMenber: true, menber: "松本", description:
+                "研究室に軟禁されており、なかなか部室にはいらっしゃらない激レア。 化学類所属。"
+            },
+            { isMenber: false, grade: "B4" },
+            { isMenber: true, menber: "海老原", description: "レアキャラ。国際総合学類所属。"
+            },
+            { isMenber: true, menber: "川越", description:
+                "将棋部のマスコットor姫 がおそらく部内でお酒が一番強い...? 工学システム学類所属。"
+            },
+            { isMenber: true, menber: "川又", description:
+                "よく部室にいる。将棋のやる気はともかく囲碁とポケモンカードのモチベはすこぶる高い編入生。情報科学類所属。"
+            },
+            { isMenber: true, menber: "小山", description:
+                "将棋部前部長。棋力、体力、雀力、煽り力をすべて兼ね備えて入部してきた将棋部の申し子。もはや佇まいは院生のごとし。２切れの鬼。社会学類所属。"
+            },
+            { isMenber: true, menber: "杉山", description:
+                "戦法の研究に余念がない。ほめると調子に乗るが、ほめられなくても調子に乗る。会うと必ずおごってくれる。物理学類所属。"
+            },
+            { isMenber: true, menber: "平松", description:
+                "囲碁と麻雀からの刺客。一番先輩を立ててくれる常識人。応用理工学類所属。"
+            },
+            { isMenber: true, menber: "武者野", description:
+                "将棋も勉学も頑張っている真面目人。性格はおっとりしていて天然系。ただ真顔で煽っている姿が時たま観測されている。応用理工学類所属。"
+            },
+            { isMenber: true, menber: "森", description:
+                "筑波大将棋部第n代目の森氏。知的な雰囲気漂うインテリくん。どうぶつしょうぎの猛者。現役では最強(?)。 応用理工学類所属。"
+            },
+            { isMenber: true, menber: "吉岡", description:
+                "秋学期になって出現率がアップした山陰の民。いつもにこにこしているが闇が深い。馬に造詣が深かったりするかもしれない。 物理学類所属。"
+            },
+            { isMenber: false, grade: "B3" },
+            { isMenber: true, menber: "梅田", description:
+                "好きな食べ物は牛丼。嫌いな食べ物はナス。 ゴキ中バスター。超急戦は全国トップクラス。 おそらく現役最強。 社会工学類所属。"
+            },
+            { isMenber: true, menber: "遠藤", description:
+                "通称えんちゃん。 落単芸人。ホームレス大学生。 地球学類所属。"
+            },
+            { isMenber: true, menber: "大森", description:
+                "将棋部部長。ココリコス。部屋の電球なしで半年間過ごした男。ねっしーからの刺客。地球学類所属。"
+            },
+            { isMenber: true, menber: "櫛田", description:
+                "めちゃめちゃ部室にいる。 数学の力と引き換えに敬語を失った男。 数学類所属。"
+            },
+            { isMenber: true, menber: "桑原", description:
+                "部内GPA最弱の男。 ゴリラのような将棋を指す。 化学類所属。"
+            },
+            { isMenber: true, menber: "西", description:
+                "哲学ニート（部員談）。話しかけると哲学ばなしが…。 今年ドイツに留学するらしい。  人文学類所属。"
+            },
+            { isMenber: true, menber: "三戸部", description:
+                "西木野真姫と渡辺曜推しのラブライバー。 ラブライブの話をすれば仲良くなれるかもしれない。 戦型チェック担当。 情報科学類所属。"
+            },
+            { isMenber: false, grade: "B2" },
+            { isMenber: true, menber: "井上", description:
+                "将棋部の癒し枠。たまにしか出現しないので出会えたらラッキー。社会工学類所属。"
+            },
+            { isMenber: true, menber: "池田", description:
+                "この学年で一番のクールキャラ。彼の居飛車は誰にも止められない。合宿担当。工学システム学類所属"
+            },
+            { isMenber: true, menber: "江頭", description: "副部長兼WEB担当。情報科学類所属。"
+            },
+            { isMenber: true, menber: "神田", description:
+                "彼がいるとポーカーが始まる。最近はポケカも始めたようだ。局員。情報科学類所属。"
+            },
+            { isMenber: true, menber: "城戸", description:
+                "三間のドン。「石田流以外指さねー！！」　新歓担当。知識情報・図書館学類所属。"
+            },
+            { isMenber: true, menber: "西沢", description:
+                "キラキラJD。将棋部を住処としている。辛党であおりの代名詞。渉外担当兼戦型チェック担当。芸術専門学群所属。"
+            },
+            { isMenber: false, grade: "OB" },
+            { isMenber: true, menber: "清水", description:
+                "学校の仕事で多忙な紀州人。Twitter5割、全代会5割でできている。将棋は……彼の厚い攻めと謎のボケを受け止めるのは至難の業。"
+            },
+            { isMenber: true, menber: "中山", description:
+                "部室にいる頻度は負けない元部長。単位大丈夫か？ 携帯電話の置き忘れ回数は誰にも負けない。 使用戦法への一途な思いもだれにも負けない。 孤独にも負けない！"
+            }
+          ]
+        }
+      });
+    </script>
+    <style></style>
+  </body>
+</html>
