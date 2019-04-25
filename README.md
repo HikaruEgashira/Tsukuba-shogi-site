@@ -6,3 +6,11 @@
 - JSフレームワークはvue
 - cssフレームワークはvuetify
 - 2019年作成
+
+## PC
+
+![](docs/pc.png)
+
+## SmartPhone
+
+![](docs/sp.png)
