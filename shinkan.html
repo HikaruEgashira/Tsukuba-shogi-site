@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&amp;subset=japanese"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
-      rel="stylesheet"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" type="text/css" href="src/main.css" media="screen" />
-    <script src="js/main.js"></script>
-    <title>新歓案内ー筑波大学将棋部</title>
-    <link rel="stylesheet" type="text/css" href="src/main.css" />
-  </head>
 
-  <body>
-    <div>
-      <div id="app">
-        <v-app> 
-            <v-parallax dark src="./img/3.jpg">
-              <v-layout align-center column justify-center>
-                  <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span><p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p></div>
-              </v-layout>
-            </v-parallax> <v-container fluid>
-            <article>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&amp;subset=japanese" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="src/main.css" media="screen" />
+  <script src="js/main.js"></script>
+  <title>新歓案内ー筑波大学将棋部</title>
+  <link rel="stylesheet" type="text/css" href="src/main.css" />
+</head>
+
+<body>
+  <div>
+    <div id="app">
+      <v-app>
+        <v-parallax dark src="./img/3.jpg">
+          <v-layout align-center column justify-center>
+            <div class="welcome"><span id="shadow-1">Tsukuba<br />Shogi Club<br></span>
+              <p style="font-size:20px" id="shadow-03" class="font-weight-thin">～筑波大学将棋部</p>
+            </div>
+          </v-layout>
+        </v-parallax>
+        <v-container fluid>
+          <article>
             <h1 class="col">2019年度新歓の案内</h1>
             <v-layout row wrap>
               <v-flex xs12>
                 <div class="py-4">
-                  <p style="color: grey; text-decoration: underline">投稿日: 2019年4月6日</p>
+                  <p style="color: grey; text-decoration: underline">投稿日: 2019年4月19日</p>
                   <p>
                     将棋部の概要は<a href="intro.html">こちら</a>
                   </p>
@@ -80,69 +75,54 @@
                   4月12日 全体活動(部室)
                 </h2>
                 <div class="visible pa-4">
-                    <p>文化系サークル館一階の部室にて18:30から全体活動を行います。</p>
+                  <p>文化系サークル館一階の部室にて18:30から全体活動を行います。</p>
                 </div>
 
                 <h2 class="pt-5" onclick="dispElement(3)">
                   4月19日 全体活動(部室)
                 </h2>
-                  <div class="visible pa-4">
-                      <p>部室にて18:30から全体活動を行います。</p>
-                  </div>
+                <div class="visible pa-4">
+                  <p>部室にて18:30から全体活動を行います。</p>
+                </div>
 
                 <h2 class="pt-5" onclick="dispElement(4)">
                   4月 新歓大会(部室, 時期未定)
                 </h2>
                 <div class="visible pa-4">
-                    <p>部室にて13:00から新歓大会を行う予定です。</p>
+                  <p>部室にて<del>13:00</del>10:00から新歓大会を行う予定です。</p>
+                  <p><a href="http://www.tsukuba.ac.jp/access/map_central.html"
+                    >文化系サークル会館1階</a>(地図中K7)です。</p>
                 </div>
 
                 <h2 class="pt-5" onclick="dispElement(5)">
                   4月26日 本新歓(部室→一太郎)
                 </h2>
-                  <div class="visible pa-4">
-                      <p>お好み焼き店の一太郎にて18:00から本新歓を行います。</p>
-                  </div>
-                <h2 class="pt-5">新歓（お食事）</h2>
                 <div class="visible pa-4">
-                    <p>4月15日、22日に、本新歓があります。</p>
-                    <p>是非、奮ってご参加下さい。</p>
-                    <p>詳しい時間と場所は後日載せます...m(_ _)m</p>
-                </div>
-                <h2 class="pt-5">新歓大会について</h2>
-                <div class="visible pa-4">
-                  <p>
-                    4/18(土)に行う予定です。場所は<a
-                      href="http://www.tsukuba.ac.jp/access/map_central.html"
-                      >文化系サークル会館2階</a
-                    >(地図中K7)です。
-                  </p>
-                  <p>Googleマップは<a href="https://www.google.com/maps/place/%E3%80%92305-0006+%E8%8C%A8%E5%9F%8E%E7%9C%8C%E3%81%A4%E3%81%8F%E3%81%B0%E5%B8%82%E5%A4%A9%E7%8E%8B%E5%8F%B0%EF%BC%91%E4%B8%81%E7%9B%AE+%E6%96%87%E5%8C%96%E7%B3%BB%E3%82%B5%E3%83%BC%E3%82%AF%E3%83%AB%E9%A4%A8/@36.1088074,140.1013781,17z/data=!4m12!1m6!3m5!1s0x60220c06df70692d:0x96c6d42b9b4a626c!2z562R5rOi5aSn5a2mIOaWh-WMluezu-OCteODvOOCr-ODq-S8mumkqA!8m2!3d36.1088074!4d140.1035668!3m4!1s0x60220c06df6493b3:0xd26ed93a3085157!8m2!3d36.1087855!4d140.1036399">
-                    こちら</a>から!
-                  </p>
+                  <p>お好み焼き店の一太郎にて18:00から本新歓を行います。</p>
                 </div>
                 <div><a href="http://www.stb.tsukuba.ac.jp/~shogi/">筑波大学将棋部ホームページに戻る</a></div>
               </v-flex>
             </v-layout>
-            </article>
-          </v-container>
-        </v-app>
-      </div>
+          </article>
+        </v-container>
+      </v-app>
     </div>
+  </div>
 
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
-    <script>
-      new Vue({
-        el: "#app"
-      });
-    </script>
-    <style>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: "#app"
+    });
+  </script>
+  <style>
     li {
       padding-top: 5px;
-      list-style:square;
+      list-style: square;
     }
-    </style>
-  </body>
+  </style>
+</body>
+
 </html>
